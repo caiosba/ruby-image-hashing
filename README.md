@@ -26,7 +26,3 @@ Look for similar images using Ruby. Current approaches:
 
 * https://github.com/Nakilon/dhash-vips
 * https://github.com/facebook/ThreatExchange/blob/master/hashing/hashing.pdf
-
-# Evaluation
-
-Against the Facebook dataset, the results are:
