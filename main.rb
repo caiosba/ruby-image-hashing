@@ -10,10 +10,10 @@ class Algorithm
   end
 
   def self.dhash(a, b)
-    hash1 = DHashVips::IDHash.fingerprint a
-    hash2 = DHashVips::IDHash.fingerprint b
+    hash1 = DHashVips::DHash.calculate a
+    hash2 = DHashVips::DHash.calculate b
     distance = DHashVips::DHash.hamming hash1, hash2
-    distance < 50 ? 'Similar' : 'Different'
+    distance < 20 ? 'Similar' : 'Different'
   end
 
   def self.phash(a, b)
